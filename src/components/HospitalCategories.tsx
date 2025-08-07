@@ -12,25 +12,25 @@ const hospitalCategories = [
   {
     name: 'Medanta – The Medicity',
     count: 'Gurgaon, India',
-    image: 'public/Medanta hospital.png',
+    image: 'Medanta hospital.png',
     description: 'Comprehensive healthcare with multiple specialties under one roof',
   },
   {
     name: 'Indraprastha Apollo Hospital',
     count: 'Delhi',
-    image: 'public/Apollo-hospital.png',
+    image: 'Apollo-hospital.png',
     description: 'Specialized oncology treatment and cancer care facilities',
   },
   {
     name: 'Max Super Speciality Hospital',
     count: 'Saket , New Delhi',
-    image: 'public/Max-hospital.png',
+    image: 'Max-hospital.png',
     description: 'Advanced cardiac care and cardiovascular treatment centers',
   },
   {
     name: 'Artemis Hospital',
     count: 'Gurugram',
-    image: 'public/Artimes-hospital.png',
+    image: 'Artimes-hospital.png',
     description: '24/7 emergency medical services and trauma care',
   },
   {
