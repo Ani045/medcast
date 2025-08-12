@@ -4,113 +4,120 @@ import { Star, ChevronLeft, ChevronRight, X, MapPin, Calendar, Clock, DollarSign
 // Patient stories data
 const patientStories = [
   {
-    id: 1,
-    name: 'Sarah Mitchell',
-    age: 45,
-    country: 'United States',
-    treatment: 'Cardiac',
-    procedure: 'Heart Valve Replacement',
-    rating: 5,
-    date: 'Dec 15, 2024',
-    clinic: 'Istanbul Heart Center',
-    location: 'Turkey',
-    story: "Six months ago, I was told I needed urgent heart valve replacement. The costs in the US were overwhelming - over $150,000. Through Medcasts, I found Istanbul Heart Center. Dr. Mehmet and his team were incredible. The surgery was successful, and I'm now living a completely normal life. I can climb stairs without getting breathless, play with my grandchildren, and feel like I have my life back. The total cost was less than $25,000 including travel. Best decision I ever made.",
-    beforeAfter: true,
-    image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
-    recoveryTime: '6 weeks',
-    savings: '$125,000',
-    activeTime: 'Active 2 hours ago'
-  },
-  {
     id: 2,
-    name: 'Michael Chen',
-    age: 38,
-    country: 'Canada',
+    name: 'Tsegaye Bekele',
+    age: 34,
+    country: 'Ethiopia',
     treatment: 'Orthopedic',
-    procedure: 'Knee Replacement Surgery',
+    treatmentCategory: 'orthopedic',
+    procedure: 'Spinal Surgery',
     rating: 5,
-    date: 'Nov 8, 2024',
-    clinic: 'Bangkok Orthopedic Hospital',
-    location: 'Thailand',
-    story: "I'm a construction worker who suffered from severe knee pain for 3 years. Walking became torture, and I couldn't work properly. The waiting list in Canada was 18 months. I found Bangkok Orthopedic Hospital through Medcasts. Within 2 weeks, I was in Thailand getting my surgery. Today, 4 months later, I'm back to work, pain-free, and even started jogging again. The physiotherapy team was amazing, and the hospital felt like a 5-star hotel. I saved 2 years of pain and $40,000.",
-    beforeAfter: false,
-    image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400',
-    recoveryTime: '8 weeks',
-    savings: '$40,000',
-    activeTime: 'Active 5 hours ago'
+    date: 'Nov 22, 2024',
+    clinic: 'Artemis Hospital',
+    location: 'Gurgaon, India',
+    story: "I suffered a severe spinal injury in a car accident in Addis Ababa. Local doctors said I might never walk again. My family found Medcasts online and they helped us connect with Artemis Hospital's Orthopedics department[1][3]. Dr. S.K. Rajan performed a complex spinal fusion surgery using advanced robotic assistance. The neurosurgery and orthopedic teams worked together for 8 hours to repair my spine. Today, 4 months later, I'm walking without assistance and even returned to my job as a teacher. The physiotherapy team helped me regain strength step by step. Medcasts didn't just find me a hospital; they found me hope when all seemed lost.",
+    beforeAfter: true,
+    image: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400',
+    recoveryTime: '12 weeks',
+    savings: '$85,000',
+    activeTime: 'Active 3 hours ago'
   },
   {
     id: 3,
-    name: 'Emma Rodriguez',
-    age: 52,
-    country: 'Spain',
+    name: 'Sarah MacKenzie',
+    age: 41,
+    country: 'Canada',
     treatment: 'Oncology',
+    treatmentCategory: 'oncology',
     procedure: 'Breast Cancer Treatment',
     rating: 5,
-    date: 'Oct 22, 2024',
-    clinic: 'Memorial Cancer Center',
-    location: 'Turkey',
-    story: "When I was diagnosed with breast cancer, I was devastated. The treatment options in Spain had long waiting times. Through Medcasts, I connected with Memorial Cancer Center in Turkey. The oncology team was world-class - they used the latest immunotherapy treatments. Dr. Ayşe held my hand through every step. Today, I'm cancer-free for 6 months. The care wasn't just medical; it was emotional support that helped me heal completely. I'm grateful every single day.",
+    date: 'Oct 15, 2024',
+    clinic: 'Artemis Hospital',
+    location: 'Gurgaon, India',
+    story: "When I was diagnosed with aggressive breast cancer in Toronto, the waiting time for treatment was 8 weeks - too long for my condition. A friend suggested Medcasts for medical tourism to India. Artemis Hospital's Cancer Institute[1][3] under Dr. Vinod Raina was phenomenal. They started my chemotherapy within 48 hours of arrival using the latest targeted therapy protocols and immunotherapy. The nursing staff was compassionate, and they even arranged for a translator to help my husband. After 6 months of comprehensive cancer treatment, I'm now cancer-free. Medcasts made the entire process seamless, and the cost was 70% less than what I would have paid privately in Canada.",
     beforeAfter: false,
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-    recoveryTime: '12 weeks',
-    savings: '€35,000',
-    activeTime: 'Active 1 day ago'
+    image: 'https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=400',
+    recoveryTime: '16 weeks',
+    savings: 'CAD 95,000',
+    activeTime: 'Active 6 hours ago'
   },
   {
     id: 4,
-    name: 'James Wilson',
-    age: 29,
-    country: 'United Kingdom',
+    name: 'Grace Wanjiku',
+    age: 28,
+    country: 'Kenya',
     treatment: 'Plastic Surgery',
-    procedure: 'Rhinoplasty',
+    treatmentCategory: 'plastic-surgery',
+    procedure: 'Reconstructive Facial Surgery',
     rating: 5,
-    date: 'Sep 30, 2024',
-    clinic: 'Istanbul Aesthetic Center',
-    location: 'Turkey',
-    story: "I was always self-conscious about my nose. It affected my confidence in dating, job interviews, everything. After researching for months, I chose Istanbul Aesthetic Center through Medcasts. Dr. Erkan is an artist - my nose looks completely natural, like I was born with it. The recovery was smooth, and the results exceeded my expectations. Six months later, I feel like a new person. My confidence has skyrocketed, and I finally love what I see in the mirror.",
+    date: 'Sep 20, 2024',
+    clinic: 'Artemis Hospital',
+    location: 'Gurgaon, India',
+    story: "I was born with a facial deformity that affected my confidence and speech. Plastic surgery facilities in Kenya were limited and expensive. We chose Artemis Hospital's Plastic Surgery department through Medcasts after extensive research. Dr. Ajaya Kashyap performed multiple reconstructive surgeries over 4 months to completely transform my face. The results are miraculous - I look perfectly normal and can speak clearly now. The cosmetic surgery team was amazing, making the hospital stay comfortable. The speech therapy helped me develop confidence. Today, I'm working as a radio presenter, something I never thought possible. Medcasts helped me achieve results better than we ever imagined.",
     beforeAfter: true,
-    image: 'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400',
-    recoveryTime: '2 weeks',
-    savings: '£8,000',
-    activeTime: 'Active 3 days ago'
-  },
-  {
-    id: 5,
-    name: 'Maria Santos',
-    age: 67,
-    country: 'Brazil',
-    treatment: 'Orthopedic',
-    procedure: 'Hip Replacement',
-    rating: 5,
-    date: 'Aug 18, 2024',
-    clinic: 'Delhi Bone & Joint Hospital',
-    location: 'India',
-    story: "At 67, hip pain made every day a struggle. Simple tasks like cooking or gardening became impossible. My daughter found Medcasts and helped me connect with Delhi Bone & Joint Hospital. The doctors were so caring and explained everything in Portuguese through a translator. The surgery was minimally invasive, and I was walking the next day! Now I'm back to dancing salsa and taking care of my garden. Age is just a number when you have the right medical care.",
-    beforeAfter: false,
-    image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400',
-    recoveryTime: '6 weeks',
-    savings: 'R$45,000',
-    activeTime: 'Active 1 week ago'
+    image: 'https://images.pexels.com/photos/5327587/pexels-photo-5327587.jpeg?auto=compress&cs=tinysrgb&w=400',
+    recoveryTime: '8 weeks',
+    savings: 'KES 900,000',
+    activeTime: 'Active 2 days ago'
   },
   {
     id: 6,
-    name: 'Ahmed Hassan',
-    age: 41,
-    country: 'UAE',
-    treatment: 'Dental',
-    procedure: 'Full Mouth Reconstruction',
+    name: 'Dawit Gebremedhin',
+    age: 45,
+    country: 'Ethiopia',
+    treatment: 'Cardiac',
+    treatmentCategory: 'cardiac',
+    procedure: 'Bypass Surgery',
     rating: 5,
-    date: 'Jul 25, 2024',
-    clinic: 'Bangkok Dental Clinic',
-    location: 'Thailand',
-    story: "Years of neglecting my dental health left me with severe problems. I was embarrassed to smile or speak in public. The quote in Dubai was astronomical. Bangkok Dental Clinic through Medcasts changed my life. Over 3 visits spanning 6 months, they completely reconstructed my smile. The attention to detail was incredible - they matched my new teeth perfectly to my face. Now I smile confidently in every meeting and photo. My wife says I look 10 years younger!",
+    date: 'Jul 30, 2024',
+    clinic: 'Fortis Hospital',
+    location: 'Delhi, India',
+    story: "I had severe chest pain and was diagnosed with blocked arteries in Addis Ababa. The cardiologists said I needed immediate bypass surgery, which wasn't available locally. My family found Medcasts and they organized everything to bring me to India. At Fortis Escorts Heart Institute[7], Dr. Z.S. Meharwal performed a quadruple bypass surgery. The cardiac team was world-class, and they saved my life. During recovery, the nurses took special care to ensure I had Ethiopian coffee and injera. Six months later, my heart is stronger than ever. Medcasts didn't just connect me to great doctors; they gave me hope and a second chance at life.",
     beforeAfter: true,
-    image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://images.pexels.com/photos/5327924/pexels-photo-5327924.jpeg?auto=compress&cs=tinysrgb&w=400',
+    recoveryTime: '10 weeks',
+    savings: '$75,000',
+    activeTime: 'Active 4 days ago'
+  },
+  {
+    id: 7,
+    name: 'Catherine Nyong',
+    age: 38,
+    country: 'Kenya',
+    treatment: 'Neurology',
+    treatmentCategory: 'neurology',
+    procedure: 'Brain Tumor Removal',
+    rating: 5,
+    date: 'May 25, 2024',
+    clinic: 'Artemis Hospital',
+    location: 'Gurgaon, India',
+    story: "When I started having severe headaches and vision problems in Nairobi, an MRI revealed a brain tumor. Neurosurgery facilities in Kenya couldn't handle such a complex case. My family was devastated until we learned about Artemis Hospital's Neurology department[1][3] through Medcasts. Dr. Aditya Gupta performed a 12-hour surgery to remove the tumor completely while preserving all my brain functions. The precision and skill were remarkable using advanced neuro-navigation technology. Today, 9 months later, I'm completely healthy and back to my job as a university lecturer. The tumor was benign, and I have no lasting effects. Medcasts gave me access to world-class neurological care and a second chance at life.",
+    beforeAfter: true,
+    image: 'https://images.pexels.com/photos/5327586/pexels-photo-5327586.jpeg?auto=compress&cs=tinysrgb&w=400',
+    recoveryTime: '8 weeks',
+    savings: 'KES 1,200,000',
+    activeTime: 'Active 3 days ago'
+  },
+  {
+    id: 11,
+    name: 'Robert Thompson',
+    age: 62,
+    country: 'Canada',
+    treatment: 'Dental',
+    treatmentCategory: 'dental',
+    procedure: 'Dental Implants',
+    rating: 5,
+    date: 'Jan 15, 2024',
+    clinic: 'Medanta Hospital',
+    location: 'Gurgaon, India',
+    story: "I lost most of my teeth due to periodontal disease and was facing a lifetime of dentures. Dental implant costs in Canada were prohibitively expensive - over $80,000 for full mouth restoration. Through Medcasts, I discovered Medanta Hospital's advanced dental department. Dr. Ankita Gupta used cutting-edge technology including 3D imaging and computer-guided implant placement to give me a complete set of dental implants. The precision was remarkable, and the recovery was much faster than expected. Six months later, I can eat all my favorite foods again and smile with confidence. The total cost was only $12,000, and the quality rivals anything available in North America.",
+    beforeAfter: true,
+    image: 'https://images.pexels.com/photos/5327582/pexels-photo-5327582.jpeg?auto=compress&cs=tinysrgb&w=400',
     recoveryTime: '4 weeks',
-    savings: 'AED 85,000',
-    activeTime: 'Active 2 weeks ago'
+    savings: 'CAD 68,000',
+    activeTime: 'Active 3 weeks ago'
   }
+ 
 ];
 
 const treatmentTags = ['All', 'Cardiac', 'Orthopedic', 'Oncology', 'Plastic Surgery', 'Dental', 'Neurology'];
@@ -125,14 +132,17 @@ const PatientStoriesSection: React.FC = () => {
   useEffect(() => {
     const updateCardsPerSlide = () => {
       if (window.innerWidth < 768) {
-        setCardsPerSlide(2);
+        setCardsPerSlide(1);
       } else if (window.innerWidth < 1024) {
         setCardsPerSlide(2);
+      } else if (window.innerWidth < 1280) {
+        setCardsPerSlide(3);
       } else {
         setCardsPerSlide(4);
       }
       setCurrentSlide(0);
     };
+    
     updateCardsPerSlide();
     window.addEventListener('resize', updateCardsPerSlide);
     return () => window.removeEventListener('resize', updateCardsPerSlide);
@@ -148,22 +158,31 @@ const PatientStoriesSection: React.FC = () => {
     return matchesSearch && matchesFilter;
   });
 
-  const totalSlides = Math.ceil(filteredPatients.length / cardsPerSlide);
+  const totalSlides = Math.max(1, Math.ceil(filteredPatients.length / cardsPerSlide));
 
-  // Updated nextSlide and prevSlide to avoid TS error by calculating before calling setter
+  // Fixed navigation functions
   const nextSlide = () => {
-    const nextIndex = (currentSlide + 1) % totalSlides;
-    setCurrentSlide(nextIndex);
+    setCurrentSlide(prev => {
+      const next = prev + 1;
+      return next >= totalSlides ? 0 : next;
+    });
   };
 
   const prevSlide = () => {
-    const prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
-    setCurrentSlide(prevIndex);
+    setCurrentSlide(prev => {
+      const previous = prev - 1;
+      return previous < 0 ? totalSlides - 1 : previous;
+    });
   };
 
   const getGridCols = () => {
-    if (cardsPerSlide === 2) return 'grid-cols-1 sm:grid-cols-2';
-    return 'grid-cols-4';
+    switch (cardsPerSlide) {
+      case 1: return 'grid-cols-1';
+      case 2: return 'grid-cols-1 sm:grid-cols-2';
+      case 3: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
+      case 4: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
+      default: return 'grid-cols-4';
+    }
   };
 
   const openModal = (patient: typeof patientStories[0]) => {
@@ -212,7 +231,10 @@ const PatientStoriesSection: React.FC = () => {
           {treatmentTags.map((tag) => (
             <button
               key={tag}
-              onClick={() => setActiveFilter(tag)}
+              onClick={() => {
+                setActiveFilter(tag);
+                setCurrentSlide(0);
+              }}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeFilter === tag
                   ? 'bg-green-600 text-white'
@@ -231,8 +253,7 @@ const PatientStoriesSection: React.FC = () => {
             <>
               <button
                 onClick={prevSlide}
-                className="absolute right-16 top-0 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed z-10"
-                disabled={currentSlide === 0}
+                className="absolute right-16 -top-2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 z-10"
                 aria-label="Previous slide"
               >
                 <ChevronLeft size={20} className="text-gray-600" />
@@ -240,8 +261,7 @@ const PatientStoriesSection: React.FC = () => {
 
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-0 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed z-10"
-                disabled={currentSlide === totalSlides - 1}
+                className="absolute right-2 -top-2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 z-10"
                 aria-label="Next slide"
               >
                 <ChevronRight size={20} className="text-gray-600" />
@@ -249,28 +269,39 @@ const PatientStoriesSection: React.FC = () => {
             </>
           )}
 
-          {/* Slider Container */}
+          {/* Fixed Slider Container */}
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentSlide * 100}%)`, width: `${totalSlides * 100}%` }}
+              style={{ 
+                transform: `translateX(-${currentSlide * (100 / totalSlides)}%)`,
+                width: `${totalSlides * 100}%`
+              }}
             >
-              {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                <div key={slideIndex} className="flex-shrink-0" style={{ width: `${100 / totalSlides}%` }}>
-                  <div className={`grid gap-6 ${getGridCols()}`}>
-                    {filteredPatients
-                      .slice(slideIndex * cardsPerSlide, (slideIndex + 1) * cardsPerSlide)
-                      .map((patient) => (
+              {Array.from({ length: totalSlides }).map((_, slideIndex) => {
+                const startIndex = slideIndex * cardsPerSlide;
+                const endIndex = Math.min(startIndex + cardsPerSlide, filteredPatients.length);
+                const slidePatients = filteredPatients.slice(startIndex, endIndex);
+                
+                return (
+                  <div 
+                    key={slideIndex} 
+                    className="flex-shrink-0"
+                    style={{ width: `${100 / totalSlides}%` }}
+                  >
+                    <div className={`grid gap-6 ${getGridCols()} px-2`}>
+                      {slidePatients.map((patient) => (
                         <div
                           key={patient.id}
-                          className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
+                          className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer"
+                          onClick={() => openModal(patient)}
                         >
                           {/* Patient Image */}
                           <div className="relative h-48 overflow-hidden">
                             <img
                               src={patient.image}
                               alt={patient.name}
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
                             <div className="absolute bottom-3 left-3 bg-white bg-opacity-90 rounded-full px-3 py-1">
                               <span className="text-xs text-gray-600 flex items-center">
@@ -304,7 +335,10 @@ const PatientStoriesSection: React.FC = () => {
                                 <div className="text-xs text-gray-500">{patient.location}</div>
                               </div>
                               <button
-                                onClick={() => openModal(patient)}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  openModal(patient);
+                                }}
                                 className="text-green-600 text-sm font-medium hover:text-green-700 transition-colors"
                               >
                                 Read more
@@ -313,11 +347,30 @@ const PatientStoriesSection: React.FC = () => {
                           </div>
                         </div>
                       ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
+
+          {/* Slide Indicators */}
+          {totalSlides > 1 && (
+            <div className="flex justify-center mt-8 space-x-2">
+              {Array.from({ length: totalSlides }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentSlide
+                      ? 'bg-green-600 scale-110'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Modal */}
