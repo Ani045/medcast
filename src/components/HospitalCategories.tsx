@@ -10,8 +10,14 @@ interface HospitalCategoriesProps {
 // Demo data (as before)
 const hospitalCategories = [
   {
+    name: 'Artemis Hospital',
+    count: 'Gurugram',
+    image: 'Artimes-hospital.png',
+    description: '24/7 emergency medical services and trauma care',
+  },
+  {
     name: 'Medanta – The Medicity',
-    count: 'Gurgaon, India',
+    count: 'Gurugram',
     image: 'Medanta hospital.png',
     description: 'Comprehensive healthcare with multiple specialties under one roof',
   },
@@ -23,40 +29,34 @@ const hospitalCategories = [
   },
   {
     name: 'Max Super Speciality Hospital',
-    count: 'Saket , New Delhi',
+    count: 'Saket',
     image: 'Max-hospital.png',
     description: 'Advanced cardiac care and cardiovascular treatment centers',
   },
-  {
+ {
     name: 'Artemis Hospital',
     count: 'Gurugram',
     image: 'Artimes-hospital.png',
     description: '24/7 emergency medical services and trauma care',
   },
   {
-    name: 'Orthopedic Centers',
-    count: '650+ centers',
-    image: 'https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Bone, joint, and musculoskeletal treatment specialists',
-  },
-  {
-    name: 'Eye Care Hospitals',
-    count: '420+ hospitals',
-    image: 'https://images.pexels.com/photos/3845623/pexels-photo-3845623.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Amrita Hospital',
+    count: 'Faridabad',
+    image: 'amrita.jpeg',
     description: 'Comprehensive ophthalmology and vision care services',
   },
   {
-    name: 'Mental Health Centers',
-    count: '280+ centers',
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Sarvodaya Hospital',
+    count: 'Faridabad',
+    image: 'sarvodaya.jpeg',
     description: 'Psychiatric care and mental wellness treatment facilities',
   },
   {
-    name: 'Maternity Hospitals',
-    count: '550+ hospitals',
-    image: 'https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Specialized care for mothers and newborns',
-  },
+    name: 'Artemis Hospital',
+    count: 'Gurugram',
+    image: 'Artimes-hospital.png',
+    description: '24/7 emergency medical services and trauma care',
+  }
 ];
 
 const HospitalCategories: React.FC<HospitalCategoriesProps> = ({

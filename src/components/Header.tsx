@@ -16,8 +16,8 @@ const Header: React.FC = () => {
               />
             </div>
             <nav className="hidden md:flex space-x-6">
-              <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">For Clinics</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">Patient Safety</a>
+              <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">Best Doctors</a>
+              <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">Best Hospitals</a>
               <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">How it works?</a>
             </nav>
           </div>

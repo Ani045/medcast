@@ -210,6 +210,14 @@ export const treatmentCategories: TreatmentCategories = {
 };
 
 export const bestHospitalsIndia = [
+    {
+    name: 'Artemis Hospital',
+    location: 'Gurgaon, India',
+    rating: 4.5,
+    specialty: 'Well-regarded for orthopaedics, cancer, and critical care',
+    image: 'https://images.pexels.com/photos/668300/pexels-photo-668300.jpeg?auto=compress&cs=tinysrgb&w=600',
+    accreditation: 'JCI Accredited'
+  },
   {
     name: 'Medanta – The Medicity',
     location: 'Gurgaon, India',
@@ -242,14 +250,7 @@ export const bestHospitalsIndia = [
     image: 'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=600',
     accreditation: 'NABH Accredited'
   },
-  {
-    name: 'Artemis Hospital',
-    location: 'Gurgaon, India',
-    rating: 4.5,
-    specialty: 'Well-regarded for orthopaedics, cancer, and critical care',
-    image: 'https://images.pexels.com/photos/668300/pexels-photo-668300.jpeg?auto=compress&cs=tinysrgb&w=600',
-    accreditation: 'JCI Accredited'
-  },
+
   {
     name: 'Sir Ganga Ram Hospital',
     location: 'New Delhi, India',
@@ -316,8 +317,9 @@ export const certifications = [
 ];
 
 export const medicalImages = [
+  'Artimes-hospital.png',
   'Apollo-hospital.png',
   'Max-hospital.png',
   'Medanta hospital.png',
-  'Artimes-hospital.png'
+  
 ];

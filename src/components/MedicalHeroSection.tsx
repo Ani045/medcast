@@ -96,7 +96,7 @@ const MedicalHeroSection: React.FC = () => {
                       </div>
                     ))}
                   </div>
-                  <h3 className="font-bold text-gray-900 text-xl">Bookimed patient stories</h3>
+                  <h3 className="font-bold text-gray-900 text-xl">Medcasts patient stories</h3>
                 </div>
                 <ArrowRight size={24} className="text-gray-600 group-hover:translate-x-1 transition-transform duration-300" />
               </div>

@@ -3,54 +3,49 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Updated doctors data with hospital information
 const doctors = [
-  { 
-    name: 'Dr Phatcharasak', 
-    rating: 5.0, 
-    reviews: 1, 
-    specialty: 'Plastic Surgery',
-    hospital: 'Bangkok Hospital',
-    image: 'https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400'
-  },
-  { 
-    name: 'Ergin Er', 
-    rating: 4.0, 
-    reviews: 129, 
-    specialty: 'Plastic Surgery',
-    hospital: 'Acıbadem Hospital',
-    image: 'https://images.pexels.com/photos/6129967/pexels-photo-6129967.jpeg?auto=compress&cs=tinysrgb&w=400'
-  },
-  { 
-    name: 'Murat Yaman', 
-    rating: 5.0, 
-    reviews: 6, 
-    specialty: 'Oncology',
-    hospital: 'Memorial Hospital',
-    image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400'
-  },
-  { 
-    name: 'Muhammet Mustafa Aydinol', 
-    rating: 5.0, 
-    reviews: 6, 
-    specialty: 'Dental Treatment',
-    hospital: 'Dentakay Clinic',
-    image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=400'
-  },
-  { 
-    name: 'Dr Sarah Johnson', 
+ { 
+    name: 'Dr Aditya Gupta', 
     rating: 4.8, 
     reviews: 85, 
-    specialty: 'Cardiology',
+    specialty: 'Neurosurgery',
     hospital: 'Mount Sinai Hospital',
-    image: 'https://images.pexels.com/photos/5452290/pexels-photo-5452290.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: 'dr-dr-aditya-gupta.jpg'
   },
   { 
-    name: 'Dr Michael Chen', 
+
+    name: 'Dr. Rajiv Yadav', 
+    rating: 5.0, 
+    reviews: 109, 
+    specialty: 'Urology',
+    hospital: 'Artemis Hospital',
+    image: 'dr-dr-rajiv-yadav.jpg'
+  },
+  { 
+    name: 'Dr. Dheeraj Batheja', 
     rating: 4.9, 
-    reviews: 142, 
-    specialty: 'Neurology',
-    hospital: 'Johns Hopkins',
-    image: 'https://images.pexels.com/photos/5452202/pexels-photo-5452202.jpeg?auto=compress&cs=tinysrgb&w=400'
+    reviews: 129, 
+    specialty: 'Spine Surgery',
+    hospital: 'Artemis Hospital',
+    image: 'dr-dheeraj.jpeg'
+  },
+  { 
+    name: 'Dr. I.P.S. Oberoi', 
+    rating: 5.0, 
+    reviews: 6, 
+    specialty: 'Orthopaedics',
+    hospital: 'Artemis Hospital',
+    image: 'dr-dr-i-p-s-oberoi.jpg'
+  },
+  { 
+    name: 'Dr. Vandana Soni', 
+    rating: 5.0, 
+    reviews: 120, 
+    specialty: 'General Surgery',
+    hospital: 'Artemis Hospital',
+    image: 'dr-vandana.jpeg'
   }
+  
+ 
 ];
 
 const PopularDoctors = () => {
@@ -138,7 +133,7 @@ const PopularDoctors = () => {
                             <img 
                               src={doctor.image} 
                               alt={doctor.name}
-                              className="w-16 h-16 rounded-full mx-auto object-cover border-2 border-gray-100"
+                              className="w-20 h-20 rounded-full mx-auto object-contain border-2 border-gray-100"
                             />
                           </div>
                           <h3 className="font-bold text-lg text-gray-900 mb-2">{doctor.name}</h3>
